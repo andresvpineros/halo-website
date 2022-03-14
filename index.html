@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halo Infinite</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/main.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <nav>
+          <div class="mobile">
+            <div class="header">
+              <button id="bmenu">
+                <span class="material-icons">&#xe5d2;</span>                
+              </button>
+              <a href="https://www.microsoft.com/es-co/"> <img src="src/img/Microsoft-Logo.png" width="150"></img></a>
+              <div>
+                  <a href="#"><span class="material-icons">&#xe8cc;</span> </a>
+                  <a href="#"><span class="material-icons">&#xe853;</span> </a>
+              </div>
+            </div>
+            <div class="links">
+              <a href="#" class="option-menu">Game Pass</a>
+              <a href="#" class="option-menu">Juegos</a>
+              <a href="#" class="option-menu">Dispositivos</a>
+              <a href="#" class="option-menu">Comunidad</a>
+              <a href="#" class="option-menu">Soporte Técnico</a>
+              <a href="#" class="option-menu">Mi Xbox</a>
+              <a href="#" class="option-menu">Desarrolladores</a>
+              <a href="#" class="option-menu">Search</a>
+            </div>
+          </div>
+          <ul>
+            <!-- EL PROBLEMA DEL RESPONSIVE DE LOS LI DEL NAVBAR ES EL IMG -->
+            <li>
+                <div class="logos">
+                  <a href="https://www.microsoft.com/es-co/"> <img src="src/img/Microsoft-Logo.png" width="150"></img></a>
+                  <div class="line-logo"></div>
+                  <a href="https://www.microsoft.com/es-co/"> <img src="src/img/Xbox-logo.png" width="100"></img></a>
+                </div>
+            </li>
+            <li><a href="#" class="link">Game Pass <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link">Juegos <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link link-hide">Dispositivos <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link link-hide">Comunidad <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link link-hide">Soporte Técnico <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link link-hide">Mi Xbox <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link link-hide">Desarrolladores <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li class="more">
+              <a href="#" class="link" aria-hidden="false" id="bmore">Más <span class="material-icons icon-expand">&#xe5cf;</span></a>
+              <div class="menu">
+                <a href="#">Dispositivos</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Soporte Técnico</a>
+                <a href="#">Mi Xbox</a>
+                <a href="#">Desarrolladores</a>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li><a href="#" class="link">Todo Microsoft <span class="material-icons icon-expand">&#xe5cf;</span></a></li>
+            <li><a href="#" class="link">Buscar <span class="material-icons icon-expand">&#xe8b6;</span></a></li>
+            <li><a href="#" class="link">Carro <span class="material-icons icon-expand">&#xe8cc;</span></a></li>
+            <li><a href="#" class="link">Iniciar sesión <span class="material-icons icon-expand">&#xe853;</span></a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="banner">
+        <h1>Halo Infinite</h1>
+        <p>
+          <a href="#" class="green-button">
+            Consíguelo ahora <span class="material-icons">&#xe5cc;</span>
+          </a>
+        </p>
+        <img src="src/img/e7b4e2b6-ba22-4d3a-9b63-a43fef58bb80.svg" width="300">
+        <p class="desc-banner">Ahora disponible con Xbox Game Pass</p>
+        <p>
+          <a href="#" class="green-link">ÚNETE AHORA <span class="material-icons">&#xe5cc;</span></a>
+        </p>
+        <img src="src/img/66003bf9-05c2-41e7-946f-885180e4d85c.svg" width="200">
+        <div class="pop-icons">
+          <span> Consola </span>
+          <span> ● </span>
+          <span> PC </span>
+        </div>
+      </section>
+
+      <section id="wallpaper">
+        <h2>CONVIÉRTETE.</h2>
+
+        <p class="w-75">
+          La legendaria saga Halo regresa con la campaña de Master Chief más amplia 
+          hasta la fecha y una experiencia multijugador gratuita revolucionaria.
+        </p>
+
+        <h3>Avances y jugabilidad</h3>
+
+        <div id="slider">
+          <div id="controls">
+            <button id="prev">
+              <span class="material-icons">&#xe5e0;</span>
+            </button>
+            <button id="next">
+              <span class="material-icons">&#xe5e1;</span>
+            </button>
+          </div>
+          <div id="current"></div>
+          <div id="wallpaper-container"></div>
+        </div>
+      </section>
+    </div>
+    <script src="src/js/main.js" type="text/javascript"></script>
+    <script src="src/js/wallpaper.js" type="text/javascript"></script>
+  </body>
+</html>
